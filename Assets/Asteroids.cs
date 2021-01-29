@@ -45,22 +45,18 @@ public class Asteroids : MonoBehaviour
         // Bullet Player Enemy
         if(collision.tag == "Player")
         {
-            //print("Mort du joueur");
-            gameManager.KillPlayer();
+            gameManager.HS_KillPlayer();
         }
         else if(collision.tag == "Bullet")
         {
-            // détruire la bullet
             Destroy(collision.gameObject);
-            // destruction = asteroid initial
             Destroy(gameObject);
-            // division    = potentiel
             foreach (GameObject enemy in divisions)
             {
                 Instantiate(enemy, transform.position, Quaternion.identity);
             }
             // score
-            gameManager.AddScore(points);
+            gameManager.HS_AddScore(points);
         }
     }
 }

@@ -9,11 +9,11 @@ public class BonusManager : MonoBehaviour {
 
 
     void Start() {
-        selectBonusType();
+        HS_selectBonusType();
         Destroy(gameObject);
     }
 
-    void selectBonusType() {
+    void HS_selectBonusType() {
     	System.Random rnd = new System.Random();
     	GameObject bonus = Instantiate(bonuses[rnd.Next(bonuses.Count)], transform.position, Quaternion.identity);
     	bonus.GetComponent<Rigidbody2D>().velocity = transform.TransformDirection(0, -speed, 0);
