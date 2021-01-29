@@ -12,8 +12,10 @@ public class GameManager : MonoBehaviour {
 
     public int score;
     public int lives;
+    public int wave;
     public Text scoreTxt;
     public Text livesTxt;
+    public Text waveTxt;
     
     GameObject player;
     public GameObject enemyWave;
@@ -62,6 +64,7 @@ public class GameManager : MonoBehaviour {
 
     void HS_UpdateTexts() {
         scoreTxt.text = "SCORE : " + score;
+        waveTxt.text = "WAVE : " + wave;
         livesTxt.text = "LIVES : " + lives;
     }
 
@@ -80,6 +83,7 @@ public class GameManager : MonoBehaviour {
     void HS_WaitForEndOfWave() {
         GameObject[] enemys = GameObject.FindGameObjectsWithTag("Enemy");
         if(enemys.Length == 0) { // when no more enemies in the current wave, start a new one
+            wave += 1;
             HS_createNewWave();
         }
     }
