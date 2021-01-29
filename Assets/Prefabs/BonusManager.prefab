@@ -45,3 +45,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bonuses:
   - {fileID: 5221725904710595129, guid: 9e2acda6f88f5428aa9676c61a77d375, type: 3}
+  - {fileID: 4565701188600957586, guid: eddaf932938d34e60a3e54131d11b48a, type: 3}

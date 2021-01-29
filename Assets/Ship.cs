@@ -72,5 +72,9 @@ public class Ship : MonoBehaviour {
             gameManager.lives += 1;
             Destroy(collision.gameObject);
         }
+        if(collision.tag == "PointBonus") {
+            gameManager.HS_AddScore(50);
+            Destroy(collision.gameObject);
+        }
     }
 }
