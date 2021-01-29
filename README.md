@@ -3,6 +3,9 @@ Game made with Unity in a exam context.
 
 ## Game overview
 
+![plot](./Pictures/home.png)
+
+
 This game is a replica of the famous Space Invaders game.
 In this game, you control a spaceship able to blast lasers, nothing less.
 It is quite convenient because the space is filled with other beings, and lasers are a good way to deal with 'em.
@@ -10,6 +13,9 @@ Be careful thought, some lads won't be happy with you firing at them and they wi
 The more ships you destroy, the more points you earn ( but think about all the lives you selfishly took you monster ! )
 
 ### Game mechanics
+
+![plot](./Pictures/game.png)
+
 The gas pedal of your ship is broken, allowing your ship only to move right and left.
 A press on the fire button will shoot a laser in front of the ship, destroying the first target on its way.
 Enemies will appear on screen, and as they are social, always with friends, never alone.
