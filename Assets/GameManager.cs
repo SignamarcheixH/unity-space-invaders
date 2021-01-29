@@ -47,7 +47,7 @@ public class GameManager : MonoBehaviour {
     }
 
     void HS_createNewWave() {
-        float x = Random.Range(-width, 2 * (width / 5));
+        float x = Random.Range(-width, width / 5);
         float y = Random.Range(height / 2, height -1); //upper part of the screen
         Instantiate(enemyWave, new Vector2(x,y), Quaternion.identity);
     }
