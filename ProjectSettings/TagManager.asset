@@ -9,6 +9,7 @@ TagManager:
   - EnemyBullet
   - EnemyWave
   - LifeBonus
+  - PointBonus
   layers:
   - Default
   - TransparentFX
