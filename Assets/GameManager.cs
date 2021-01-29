@@ -59,6 +59,7 @@ public class GameManager : MonoBehaviour {
 
     void HS_InitGame() {
         score = 0;
+        wave = 1;
         lives = 5;
     }
 
